@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harisyunanto.harisyunanto_1202154197_modul2.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            style="@style/logo"
+            android:layout_width="121dp"
+            android:layout_height="122dp"
+            android:src="@drawable/android" />
+
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_marginRight="16dp"
+            android:text="Sherlock Resto"
+            android:fontFamily="sans-serif-smallcaps"
+            style="@style/heading_logo"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pilih_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Menu: "
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18sp"
+        android:textColor="@color/biru"
+        android:layout_centerInParent="true"/>
+
+    <RadioGroup
+        android:id="@+id/pilih"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/pilih_menu">
+        <RadioButton
+            android:id="@+id/dine_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dine In"
+            android:textSize="16sp"
+            android:textColor="@color/biru"
+            android:fontFamily="sans-serif"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/take_away"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Away"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:textColor="@color/biru"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+</RelativeLayout>

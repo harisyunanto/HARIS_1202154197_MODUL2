@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">WELCOME</string>
+    <string name="dinein">Dine In</string>
+    <string name="takeaway">Take Away</string>
+
+    <string-array name="meja_array">//array yang akan digunakan pada spinner
+        <item>Meja 1</item>
+        <item>Meja 2</item>
+        <item>Meja 3</item>
+        <item>Meja 4</item>
+        <item>Meja 5</item>
+        <item>Meja 6</item>
+    </string-array>
+
+    <string name="date_picker">Tanggal   </string>
+    <string name="time_picker">Waktu   </string>
+    <string name="date">Tanggal: </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time">Waktu:</string>
+</resources>

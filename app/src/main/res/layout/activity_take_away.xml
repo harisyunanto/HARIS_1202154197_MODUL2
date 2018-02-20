@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harisyunanto.harisyunanto_1202154197_modul2.MainActivity">
+
+    <TextView
+        android:id="@+id/identitas_pemesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Identitas Pemesan:"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:hint="Nama"/>
+
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="5"
+        android:inputType="phone"
+        android:hint="Phone"/>
+    <EditText
+        android:id="@+id/editText_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="5"
+        android:inputType="text"
+        android:hint="Alamat"/>
+    <EditText
+        android:id="@+id/editText_catatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="5"
+        android:inputType="text"
+        android:hint="Catatan"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="60dp"
+        android:text="Waktu Pengambilan"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="60dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textSize="12dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:onClick="showDatePickerDialog"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam"
+            android:textSize="12dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:onClick="showTimePickerDialog"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_pilih_pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Pilih Pesanan"
+        android:layout_marginHorizontal="125dp"
+        android:onClick="daftar_menu"/>
+</LinearLayout>
